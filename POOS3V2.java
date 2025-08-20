@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 public class POOS3V2 {
     
+    //Metodo con argumentos
     public static void cuentas(String tit, int num, double sal){
         System.out.println("Titular... "+tit+" ...Numero de Cuenta... "+num+"\n...Saldo... "+sal);
     }

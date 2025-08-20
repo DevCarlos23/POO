@@ -6,7 +6,7 @@ public class POOS3V3 {
     //metodo con retorno
     public String procesarDatos(String Apellidos, String Nombres, String fechaNacimiento, double nota1, double nota2){
         double promedio=((nota1+nota2)/2);
-        String mensaje = " Datos del estudiante:\n"
+        String mensaje = "Datos del estudiante:\n"
                        +"Apellidos: "+Apellidos+"\n"
                        +"Nombres: "+Nombres+"\n"
                        +"Fecha de nacimiento: "+fechaNacimiento+"\n"
