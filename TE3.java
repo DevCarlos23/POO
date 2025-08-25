@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TE3 {
 
-   private int[][] matriz;
+    private int[][] matriz;
 
     public void generar(int m, int n) {
         matriz = new int[m][n];
@@ -34,8 +34,8 @@ public class TE3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean Excep;
-        do{
-            Excep=true;
+        do {
+            Excep = true;
             try {
                 System.out.print("Digite el numero de filas: ");
                 int m = sc.nextInt();
@@ -45,12 +45,12 @@ public class TE3 {
                 T3.generar(m, n);
                 System.out.println("La matriz generada es:");
                 T3.imprimir();
-                
+
             } catch (InputMismatchException ex) {
                 System.out.println("Solo se admiten numeros enteros positivos, no ingrese caracteres, numeros negativos ni simbolos");
                 sc.nextLine();
-                Excep=false;
+                Excep = false;
             }
-        }while (!Excep);
+        } while (!Excep);
     }
 }
