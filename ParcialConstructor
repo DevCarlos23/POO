@@ -1,0 +1,27 @@
+package cuenta_bancaria;
+ 
+import javax.swing.JOptionPane;
+ 
+public class Principal {
+    public static void main(String[] args) {
+        cuenta_bancaria C1 = new cuenta_bancaria(123456789, "Sebastian", 2018, 2500000, "Vacia");
+        cuenta_bancaria C2 = new cuenta_bancaria(234567890, "Jose", 2010, 2500000, "Base");
+        cuenta_bancaria C3 = new cuenta_bancaria(345678901, "Rafael", 2016, 500000, "Base");
+ 
+        C1.mostrarDatos();
+        C2.mostrarDatos();
+        C3.mostrarDatos();
+        String resultado = C1.mostrarMayorSaldo(C2, C3);
+        JOptionPane.showMessageDialog(null, resultado, "Resultado", JOptionPane.INFORMATION_MESSAGE);
+        C1.Antiguedad();
+        C2.Antiguedad();
+        C3.Antiguedad();
+        C1.compararSaldos(C2, C3);
+        C1.IncrementoPorAntiguedad();
+        C2.IncrementoPorAntiguedad();
+        C3.IncrementoPorAntiguedad();
+        C1.SacarDinero(100000);
+        C2.SacarDinero(50000);
+        C3.SacarDinero(100000000);
+    }
+}
